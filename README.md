@@ -17,8 +17,8 @@
 
 - mvn archetype:generate -DgroupId=com.nhatvu148 -DartifactId=core -DarchetypeArtifactId=maven-archetype-quickstart -DinteractiveMode=false
 - mvn archetype:generate -DgroupId=com.nhatvu148 -DartifactId=mywebapp -DarchetypeArtifactId=maven-archetype-webapp -DinteractiveMode=false
-  mvn install
-  java -cp target/core-1.0-SNAPSHOT.jar com.nhatvu148.App
+- mvn install
+- java -cp target/core-1.0-SNAPSHOT.jar com.nhatvu148.App
 
 ## References
 
