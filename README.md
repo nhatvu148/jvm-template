@@ -12,6 +12,7 @@
 - mvn clean
 - mvn package
 - mvn dependency:resolve-plugins
+- mvn help:effective-pom
 - mvn clean package
 - java -classpath hello-world-0.0.1-SNAPSHOT.jar HelloWorld
 
