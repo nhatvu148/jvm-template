@@ -9,6 +9,12 @@ public class App {
         List<Integer> iList = new ArrayList<Integer>() {
             {
                 add(1);
+                add(12);
+                add(24);
+                add(13);
+                add(200);
+                add(98);
+                add(123);
                 add(2);
                 add(3);
             }
@@ -30,6 +36,8 @@ public class App {
 
         int result = calculator((var a, var b) -> a + b, 12, 34);
         out.println(result);
+
+        iList.stream().limit(10).filter(i -> i > 2).map(i -> i * 100 / 2).sorted().forEach(i -> out.print(i + " "));
     }
 
     public static <T> T calculator(BinaryOperator<T> func, T val1, T val2) {
