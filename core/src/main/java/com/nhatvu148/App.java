@@ -3,6 +3,7 @@ package com.nhatvu148;
 import java.util.*;
 import java.util.function.BinaryOperator;
 import static java.lang.System.*;
+import org.apache.commons.lang3.StringUtils;
 
 public class App {
     public static void main(String[] args) {
@@ -38,6 +39,8 @@ public class App {
         out.println(result);
 
         iList.stream().limit(10).filter(i -> i > 2).map(i -> i * 100 / 2).sorted().forEach(i -> out.print(i + " "));
+
+        out.println(StringUtils.capitalize("The outer space is containing a bunch of crazy stuff!!"));
     }
 
     public static <T> T calculator(BinaryOperator<T> func, T val1, T val2) {
