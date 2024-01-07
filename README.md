@@ -37,6 +37,7 @@
 - gradle test
 - gradle jar
 - gradle run
+- gradle :app:dependencies
 
 - gradle firstTask
 - gradle fT or ./gradlew fT
