@@ -10,7 +10,16 @@ plugins {
     application
 }
 
+project.description = "My Java Project"
+project.version = "1.0"
+
 repositories {
+    println(project.name)
+    println(project.description)
+    println(project.version)
+    println(project.path)
+    println(projectDir)
+
     // Use Maven Central for resolving dependencies.
     mavenCentral()
 
