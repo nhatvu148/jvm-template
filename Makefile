@@ -9,5 +9,5 @@ run-core:
 clean-core:
 	cd core && mvn clean
 
-run-gradle:
-	cd core-gradle/app/build && java -cp "libs/app.jar;resources/main/*" com.nhatvu148.App
+run-java:
+	cd app-java/app/build && java -cp "libs/app.jar;resources/main/*" com.nhatvu148.App

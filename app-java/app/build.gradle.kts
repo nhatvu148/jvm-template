@@ -13,6 +13,8 @@ plugins {
 repositories {
     // Use Maven Central for resolving dependencies.
     mavenCentral()
+
+    mavenLocal()
 }
 
 dependencies {
@@ -46,7 +48,13 @@ tasks.named<Test>("test") {
 }
 
 tasks.register("firstTask") {
+    println("Gradle Rocks!!!")
+
+    doFirst {
+        println("doFirst")
+    }
+
     doLast {
-        println("Gradle Rocks!!!")
+        println("doLast")
     }
 }
