@@ -23,6 +23,9 @@ dependencies {
 
     // This dependency is used by the application.
     implementation(libs.guava)
+
+    // implementation("org.apache.commons:commons-lang3:3.14.0")
+    implementation(files("src/main/resources/commons-lang3-3.14.0.jar"))
 }
 
 // Apply a specific Java toolchain to ease working on different environments.
