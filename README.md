@@ -27,3 +27,16 @@
 - https://repo1.maven.org/maven2/
 - https://repo.maven.apache.org/maven2/
 - C:\Users\nhatv\.m2\repository
+ 
+## Gradle Commands
+
+- gradle init
+- gradle tasks --all
+- gradle compileJava
+- gradle clean
+- gradle test
+- gradle jar
+- gradle run
+
+- gradle firstTask
+- gradle fT or ./gradlew fT
