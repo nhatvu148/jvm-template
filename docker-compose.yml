@@ -1,0 +1,14 @@
+version: "3.9"
+
+services:
+  jvm-runner:
+    container_name: jvm-runner
+    restart: always
+    build:
+      dockerfile: Dockerfile
+      context: .
+    ports:
+      - "8087:8080"
+    volumes:
+      - .:/app
+    working_dir: /app 

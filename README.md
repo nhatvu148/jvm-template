@@ -27,7 +27,7 @@
 - https://repo1.maven.org/maven2/
 - https://repo.maven.apache.org/maven2/
 - C:\Users\nhatv\.m2\repository
- 
+
 ## Gradle Commands
 
 - gradle init
@@ -41,3 +41,15 @@
 
 - gradle firstTask
 - gradle fT or ./gradlew fT
+
+## Kafka Commands
+
+1. Windows
+
+- zookeeper-server-start C:\kafka\config\zookeeper.properties
+- kafka-server-start C:\kafka\config\server.properties
+
+2. Linux
+
+- zookeeper-server-start.sh /opt/kafka_2.13-3.6.1/config/zookeeper.properties
+- kafka-server-start.sh /opt/kafka_2.13-3.6.1/config/server.properties
