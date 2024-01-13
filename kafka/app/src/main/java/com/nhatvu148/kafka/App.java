@@ -5,9 +5,9 @@ package com.nhatvu148.kafka;
 
 import java.util.Properties;
 import static java.lang.System.*;
-
 import org.apache.kafka.clients.producer.KafkaProducer;
 import org.apache.kafka.clients.producer.ProducerRecord;
+import org.apache.kafka.clients.producer.RecordMetadata;
 
 public class App {
     public String getGreeting() {
@@ -25,8 +25,14 @@ public class App {
         ProducerRecord<String, Integer> record = new ProducerRecord<>("OrderTopic", "MacBook Pro", 14);
 
         try {
-            producer.send(record);
-            out.println("Message Sent Successfully!");
+            // Sync Send
+            // RecordMetadata recordMetadata = producer.send(record).get();
+            // out.println(recordMetadata.partition());
+            // out.println(recordMetadata.offset());
+            // out.println("Message Sent Successfully!");
+
+            // Async Send
+            producer.send(record, new OrderCallback());
         } catch (Exception e) {
             e.printStackTrace();
         } finally {

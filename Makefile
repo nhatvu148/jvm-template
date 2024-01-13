@@ -26,3 +26,6 @@ start-kafka:
 
 stop-kafka:
 	sh ./kafka/stop_servers.sh
+
+list-topics:
+	kafka-topics.sh --list --bootstrap-server localhost:9092
