@@ -1,3 +1,4 @@
+.PHONY: all
 all: build-core run-core
 
 build-core:
@@ -19,3 +20,9 @@ ifdef OS
 else
 	cd app-java/app/build && java -cp "libs/app-1.0.jar:resources/main/*" com.nhatvu148.App
 endif
+
+start-kafka:
+	sh ./kafka/start_servers.sh
+
+stop-kafka:
+	sh ./kafka/stop_servers.sh
