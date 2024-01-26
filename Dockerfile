@@ -16,7 +16,7 @@ RUN wget https://downloads.apache.org/kafka/${KAFKA_VERSION}/kafka_2.13-${KAFKA_
     rm kafka_2.13-${KAFKA_VERSION}.tgz
 
 # Install Tomcat
-ENV TOMCAT_VERSION=11.0.0-M15
+ENV TOMCAT_VERSION=11.0.0-M16
 RUN wget https://downloads.apache.org/tomcat/tomcat-11/v${TOMCAT_VERSION}/bin/apache-tomcat-${TOMCAT_VERSION}.tar.gz && \
     tar -xzf apache-tomcat-${TOMCAT_VERSION}.tar.gz -C /opt && \
     rm apache-tomcat-${TOMCAT_VERSION}.tar.gz
