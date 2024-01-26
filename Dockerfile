@@ -47,6 +47,8 @@ ENV PATH $PATH:$JAVA_HOME/bin:$MAVEN_HOME/bin:$GRADLE_HOME/bin:$KAFKA_HOME/bin:$
 EXPOSE 8080 9092
 
 WORKDIR /app
+COPY conf/tomcat-users.xml ${CATALINA_HOME}/conf/tomcat-users.xml
+COPY conf/context.xml ${CATALINA_HOME}/conf/context.xml
 
 # Start Tomcat
 CMD ["catalina.sh", "run"]
